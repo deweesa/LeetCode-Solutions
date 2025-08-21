@@ -5,8 +5,7 @@ public class Solution {
 
         for(int i = 0; i < grid.Length; i++) {
             for(int j = 0; j < grid[0].Length; j++) {
-                if(grid[i][j] == 'x' || grid[i][j] == '0') continue;
-                else {
+                if(grid[i][j] == '1') {
                     result += 1;
                     dfs(grid, i, j);
                 }
